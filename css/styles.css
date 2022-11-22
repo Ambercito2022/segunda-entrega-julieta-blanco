@@ -11,7 +11,6 @@ html{
 body{
     background-image: linear-gradient(to bottom right, #ffe7fc, #dfebfa, white);
     font-family: 'Quicksand', sans-serif;
-    margin: 1rem;
 }
 
 img{
@@ -60,26 +59,32 @@ p{
 }
 
 
-#formulario-contacto fieldset{
-    background-color:  rgba(194, 205, 241, 0.15);
-    display: inline;
-    padding: 1.5rem 3rem;
-    border:solid 0.12rem rgba(0, 0, 0, 0.4);
-    border-radius: 1.5rem;
 
-}
 
-#formulario-contacto legend{
-    font-weight: bold;
-    font-size: 1.2rem;
+.zona{
+    display: flex;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
+#formulario-contacto fieldset{
+    background-color:  rgba(194, 205, 241, 0.15);
+    display: inline;
+    padding: 1.5rem 3rem;
+    border:solid 0.12rem rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+    width: 30rem;
+}
+
+#formulario-contacto legend{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
 
 .formulario-contacto__question{
@@ -312,9 +317,7 @@ footer{
     margin-top: 1.4rem;
 }
 
-form{
-    margin-top: 1.5rem;
-}
+
 
 .imagen-inicio img{
     border:solid 0.12rem rgba(0, 0, 0, 0.2);
@@ -332,8 +335,6 @@ form{
     justify-self: center;
     align-self: center;
 }
-
-
 
 
 .card .boton {
