@@ -21,16 +21,34 @@
 
     <div id="body-grids">
         <header id="header-flex" class="container-fluid">
-            <img src="img/logo.png" alt="frutos-secos-legumbres" class="imagen-header">
-            <nav>
-                <ul class="header-flex__lista-navegacion">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/galeria.html">Galería</a></li>
-                    <li><a href="pages/quienes-somos.html">Sobre Amapola</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" class="imagen-header"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/galeria.html" tabindex="-1" aria-disabled="true">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/quienes-somos.html" tabindex="-1" aria-disabled="true">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
     
         </header>
 
@@ -67,13 +85,32 @@
             </div>
     
     
-            <div class="imagen-inicio">
-                <img src="img/inicio/inicio-1.png" alt="negocio" class="img1">
-                <img src="img/inicio/inicio-2.png" alt="negocio" class="img2">
-                <img src="img/inicio/inicio-3.png" alt="negocio" class="img3">
-                <img src="img/inicio/inicio-4.png" alt="negocio" class="img4">
-    
-            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/inicio/inicio-1.png" class="d-block w-100" alt="inicio1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/inicio/inicio-2.png" class="d-block w-100" alt="inicio2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/inicio/inicio-3.png" class="d-block w-100" alt="inicio3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
             
      <div class="container-fluid" id="parr">

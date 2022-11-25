@@ -69,6 +69,7 @@ form{
     margin-top: 1.5rem;
 }
 
+
 #formulario-contacto fieldset{
     background-color:  rgba(194, 205, 241, 0.15);
     display: inline;
@@ -104,10 +105,10 @@ form{
 
 #header-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     top: 0;
     width: 100%;
     background-color:  rgb(253, 245, 250);
@@ -207,6 +208,9 @@ footer{
 
 .boton{
     padding: 0.1rem;
+    border: solid 1px rgb(83, 83, 83);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
 }
 
 .card__img-achicar{
@@ -280,6 +284,11 @@ footer{
     row-gap: 2rem;
 }
 
+.texto-galeria{
+    text-align: center;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1100px) {
     #galeria{
         grid-template-columns: repeat(2, 1fr);
@@ -304,7 +313,7 @@ footer{
 }
 
 .transform:hover{
-    transform: scale(1.35,1.35);
+    transform: scale(1.15,1.15);
 }
 
 #productos{
@@ -450,6 +459,14 @@ footer{
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
+}
+
+@media screen and (max-width: 1030px) {
+    #quienes-somos-grids{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 header{
