@@ -1,0 +1,19 @@
+{
+  "name": "entrega-3-con-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ambercito2022/segunda-entrega-julieta-blanco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ambercito2022/segunda-entrega-julieta-blanco/issues"
+  },
+  "homepage": "https://github.com/Ambercito2022/segunda-entrega-julieta-blanco#readme"
+}
