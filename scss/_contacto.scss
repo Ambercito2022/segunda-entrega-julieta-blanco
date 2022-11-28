@@ -1,0 +1,44 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+
+#formulario-contacto{
+    fieldset{
+        background-color:  rgba(194, 205, 241, 0.15);
+        display: inline;
+        padding: 1.5rem 3rem;
+        border:solid 0.12rem rgba(0, 0, 0, 0.4);
+        border-radius: 1.5rem;
+        width: 30rem;
+        } 
+    legend{
+        font-weight: bold;
+        font-size: 1.2rem;
+        }
+}
+
+.formulario-contacto__question{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.formulario-contacto__question-2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boton-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.zona{
+    display: flex;
+}

@@ -1,0 +1,79 @@
+nav{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.header-flex__lista-navegacion li:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+.imagen-header{
+    width: 10rem;
+    /*height seria para la altura; width para el ancho*/
+}
+
+
+
+#header-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    top: 0;
+    width: 100%;
+    background-color:  rgb(253, 245, 250);
+    /*z-index lo puedo usar para que no me quede el menu detras de los otros elementos*/
+}
+
+.header-flex__lista-navegacion{
+    display: flex;
+    /*gap = espacios pequeños*/
+    gap: 1.5rem;
+    margin-right: -3rem;
+}
+
+.header-flex__lista-navegacion a{
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 850px){
+    .imagen-header{
+     width: 8.5rem;   
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #header-flex {
+        flex-direction: column;
+    }
+    
+    .header-flex__lista-navegacion{
+        gap: 1rem;
+    }
+
+    .header-flex__lista-navegacion a{
+        font-size: 1.15rem;
+    }
+
+    .imagen-header{
+        width: 12rem;
+    }
+
+    h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 543px){
+    .header-flex__lista-navegacion{
+        flex-direction: column;
+    }
+
+}

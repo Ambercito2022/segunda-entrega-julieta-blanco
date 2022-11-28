@@ -1,0 +1,97 @@
+
+#body-grids{
+    display: grid;
+    grid-template-areas: 
+    
+    "header header header"
+    "h1 h1 h1"
+    "parrafo parrafo parrafo"
+    "side imagen otherside"
+    "side imagen otherside"
+    "parr parr parr"
+    "footer footer footer";
+
+    grid-template-columns: 8fr 84fr 8fr;
+    justify-content: space-evenly;
+}
+
+header{
+    grid-area: header;
+}
+
+h1{
+    grid-area: h1;
+}
+
+div.parrafos-inicio{
+    grid-area: parrafo;
+}
+
+div.iconos1{
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: space-evenly;
+     margin-right: 1.5rem;
+
+}
+
+div.imagen-inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    div.imagen-inicio{
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+    }
+
+    div.inicio__img{
+        width: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 543px){
+    div.imagen-inicio{
+        max-width: 70%;
+    }
+
+    div.inicio__img{
+        width: 2.5rem;
+    }
+}
+
+
+div.iconos2{
+    grid-area: otherside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 1.5rem;
+
+}
+
+div#parr{
+    grid-area: parr;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+/*MEDIA QUERIES PARA DESKTOP FIRST*/
+@media screen and (max-width: 767px){
+    .imagen-inicio{
+        display: flex;
+        flex-direction: column;
+    }
+}
