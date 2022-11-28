@@ -83,16 +83,20 @@ nav {
   margin-top: 1rem;
   margin-bottom: 1rem;
   top: 0;
-  width: 100%;
   background-color: rgb(253, 245, 250);
   /*z-index lo puedo usar para que no me quede el menu detras de los otros elementos*/
 }
 
-.header-flex__lista-navegacion {
+.navbar {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   /*gap = espacios pequeños*/
-  gap: 1.5rem;
-  margin-right: -3rem;
+  gap: 3rem;
+}
+
+nav {
+  margin: 0.5rem;
 }
 
 .header-flex__lista-navegacion a {
