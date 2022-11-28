@@ -1,89 +1,18 @@
 @import "variables";
 @import "general";
 @import "header";
+@import "footer";
 @import  "inicio";
 @import "productos";
 @import "galeria";
 @import "nosotros";
 @import "contacto";
    
-
-
-footer{
-    margin-top: 1.5rem;
-    font-weight: bold;
-}
-
-
-
 .boton{
     padding: 0.1rem;
-    border: solid 1px rgb(83, 83, 83);
+    border: $bordes;
     border-radius: 0.5rem;
     padding: 0.3rem;
-}
-
-.footer__img{
-    width: 2.2rem;
-    margin: 0.7rem 1rem;
-}
-
-.inicio__parrafo{
-    font-style: italic;
-}
-
-.inicio__parrafo-fuenteGrande{
-    font-style: italic;
-    font-size: large;
-}
-
-@media screen and (max-width: 767px) {
-
-.inicio__parrafo-fuenteGrande{
-    font-size: medium;
-}
-
-}
-
-@media screen and (max-width: 543px) {
-
-    html{
-        font-size: small;
-    }
-
-    .inicio__parrafo-fuenteGrande{
-        font-size: small;
-    }
-    
-}
-
-
-
-.inicio__img-tamano{
-    width: 3rem;
-}
-
-
-
-
-
-
-
-.imagen-inicio img{
-    border:solid 0.12rem rgba(0, 0, 0, 0.2);
-    border-radius: 3rem;
-    padding: 1rem;
-    justify-self: center;
-    align-self: center;
-}
-
-.imagen-inicio{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
 }
 
 

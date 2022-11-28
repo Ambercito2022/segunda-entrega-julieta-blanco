@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-image: linear-gradient(to bottom right, #ffe7fc, #dfebfa, white);
+    background-image: $bg-gradient;
     font-family: 'Quicksand', sans-serif;
 }
 

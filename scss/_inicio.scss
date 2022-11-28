@@ -95,3 +95,35 @@ div#parr{
         flex-direction: column;
     }
 }
+
+.inicio__parrafo{
+    font-style: italic;
+}
+
+.inicio__parrafo-fuenteGrande{
+    font-style: italic;
+    font-size: large;
+}
+
+@media screen and (max-width: 767px) {
+
+.inicio__parrafo-fuenteGrande{
+    font-size: medium;
+}
+}
+
+@media screen and (max-width: 543px) {
+
+    html{
+        font-size: small;
+    }
+
+    .inicio__parrafo-fuenteGrande{
+        font-size: small;
+    }
+    
+}
+
+.inicio__img-tamano{
+    width: 3rem;
+}
