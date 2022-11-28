@@ -1,12 +1,4 @@
 
-#galeria img{
-    border-radius: 1.5rem;
-    border:solid 0.12rem rgba(0, 0, 0, 0.2);
-    padding: 0.5rem;
-    width: 20rem;
-    place-items: center;
-}
-
 #galeria{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,6 +6,14 @@
     width: 100%;
     justify-items: center;
     row-gap: 2rem;
+
+    img{
+        border-radius: 1.5rem;
+        border:solid 0.12rem rgba(0, 0, 0, 0.2);
+        padding: 0.5rem;
+        width: 20rem;
+        place-items: center;
+    }
 }
 
 .texto-galeria{
@@ -34,10 +34,6 @@
 
         grid-template-columns: repeat(1, 1fr);
         row-gap: 2rem;
-    }
-
-    h1{
-        text-align: center;
     }
      #galeria img{
         width: 30rem;

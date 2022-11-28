@@ -46,13 +46,7 @@ div.imagen-inicio{
     align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-
-    div.imagen-inicio{
-        display: flex;
-        flex-direction: column;
-        max-width: 75%;
-    }
+@media screen and (max-width: $pantalla-mediana) {
 
     div.inicio__img{
         width: 2.5rem;
@@ -81,12 +75,15 @@ div.iconos2{
 
 }
 
-div#parr{
+#parr{
+    margin-top: 1rem;
     grid-area: parr;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
+
 }
+
 
 /*MEDIA QUERIES PARA DESKTOP FIRST*/
 @media screen and (max-width: 767px){

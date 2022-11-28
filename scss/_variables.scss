@@ -1,3 +1,9 @@
 $bg-gradient: linear-gradient(to bottom right, #ffe7fc, #dfebfa, white);
 $color-titulos: rgb(76, 196, 39);
 $bordes: solid 1px rgb(83, 83, 83);
+
+/*TAMAÑOS DE PANTALLA PARA MEDIA QUERIES*/
+
+$pantalla-mediana: 767px;
+$pantalla-chica: 300px;
+$pantalla-grande: 992px;

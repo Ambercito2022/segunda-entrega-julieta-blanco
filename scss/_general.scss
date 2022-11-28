@@ -25,6 +25,13 @@ h1{
     text-align: justify;
 }
 
+@media screen and (max-width: $pantalla-mediana) {
+    
+    h1{
+        text-align: center;
+    }
+}
+
 h2{
     color: $color-titulos;
     margin-bottom: 1rem;
@@ -41,4 +48,11 @@ a{
 
 ul{
     list-style: none;
+}
+
+.boton{
+    padding: 0.1rem;
+    border: $bordes;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
 }

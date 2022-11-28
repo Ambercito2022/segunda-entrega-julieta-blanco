@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*TAMAÑOS DE PANTALLA PARA MEDIA QUERIES*/
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,11 @@ h1 {
   text-align: justify;
 }
 
+@media screen and (max-width: 767px) {
+  h1 {
+    text-align: center;
+  }
+}
 h2 {
   color: rgb(76, 196, 39);
   margin-bottom: 1rem;
@@ -41,6 +47,13 @@ a {
 
 ul {
   list-style: none;
+}
+
+.boton {
+  padding: 0.1rem;
+  border: solid 1px rgb(83, 83, 83);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
 }
 
 nav {
@@ -112,8 +125,7 @@ footer {
   margin-top: 1.5rem;
   font-weight: bold;
 }
-
-.footer__img {
+footer img {
   width: 2.2rem;
   margin: 0.7rem 1rem;
 }
@@ -156,11 +168,6 @@ div.imagen-inicio {
 }
 
 @media screen and (max-width: 767px) {
-  div.imagen-inicio {
-    display: flex;
-    flex-direction: column;
-    max-width: 75%;
-  }
   div.inicio__img {
     width: 2.5rem;
   }
@@ -182,7 +189,8 @@ div.iconos2 {
   margin-left: 1.5rem;
 }
 
-div#parr {
+#parr {
+  margin-top: 1rem;
   grid-area: parr;
   display: flex;
   justify-content: space-evenly;
@@ -263,12 +271,8 @@ div#parr {
   transform: scale(1.1, 1.1);
 }
 
-#galeria img {
-  border-radius: 1.5rem;
-  border: solid 0.12rem rgba(0, 0, 0, 0.2);
-  padding: 0.5rem;
-  width: 20rem;
-  place-items: center;
+.card .boton {
+  align-items: center;
 }
 
 #galeria {
@@ -278,6 +282,13 @@ div#parr {
   width: 100%;
   justify-items: center;
   row-gap: 2rem;
+}
+#galeria img {
+  border-radius: 1.5rem;
+  border: solid 0.12rem rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  width: 20rem;
+  place-items: center;
 }
 
 .texto-galeria {
@@ -295,9 +306,6 @@ div#parr {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 2rem;
   }
-  h1 {
-    text-align: center;
-  }
   #galeria img {
     width: 30rem;
   }
@@ -313,6 +321,41 @@ div#parr {
 .historia__parrafo-letraGrande {
   font-style: italic;
   font-size: large;
+}
+
+#quienes-somos-grids {
+  display: grid;
+  grid-template-areas: "header header" "amapola mapa" "footer footer";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+@media screen and (max-width: 1030px) {
+  #quienes-somos-grids {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header {
+  grid-area: header;
+}
+
+section#historia {
+  grid-area: amapola;
+}
+
+section#ubicacion {
+  grid-area: mapa;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#p2 {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 form {
@@ -355,60 +398,6 @@ form {
 
 .zona {
   display: flex;
-}
-
-.boton {
-  padding: 0.1rem;
-  border: solid 1px rgb(83, 83, 83);
-  border-radius: 0.5rem;
-  padding: 0.3rem;
-}
-
-.card .boton {
-  align-items: center;
-}
-
-footer {
-  grid-area: footer;
-}
-
-#parr {
-  margin-top: 1rem;
-}
-
-#quienes-somos-grids {
-  display: grid;
-  grid-template-areas: "header header" "amapola mapa" "footer footer";
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
-}
-
-@media screen and (max-width: 1030px) {
-  #quienes-somos-grids {
-    display: flex;
-    flex-direction: column;
-  }
-}
-header {
-  grid-area: header;
-}
-
-section#historia {
-  grid-area: amapola;
-}
-
-section#ubicacion {
-  grid-area: mapa;
-}
-
-footer {
-  grid-area: footer;
-}
-
-#p2 {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=styles.css.map */

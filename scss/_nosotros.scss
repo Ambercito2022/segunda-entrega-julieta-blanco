@@ -6,3 +6,44 @@
     font-style: italic;
     font-size: large;
 }
+
+
+#quienes-somos-grids{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "amapola mapa"
+    "footer footer";
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+@media screen and (max-width: 1030px) {
+    #quienes-somos-grids{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+header{
+    grid-area: header;
+}
+
+section#historia{
+    grid-area: amapola;
+}
+
+section#ubicacion{
+    grid-area: mapa;
+}
+
+footer{
+    grid-area: footer;
+}
+#p2{
+    display: flex;
+    justify-content: space-evenly;
+}
