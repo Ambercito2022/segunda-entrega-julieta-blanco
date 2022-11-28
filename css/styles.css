@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*TAMAÑOS DE PANTALLA PARA MEDIA QUERIES*/
+/*MIXINS*/
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +55,11 @@ ul {
   border: solid 1px rgb(83, 83, 83);
   border-radius: 0.5rem;
   padding: 0.3rem;
+}
+
+/*EXTENDS*/
+.centrar, .card, .boton {
+  align-items: center;
 }
 
 nav {
@@ -248,7 +254,6 @@ div.iconos2 {
   border-radius: 1.5rem;
   background-color: rgba(249, 238, 252, 0.2);
 }
-
 .card img {
   border-radius: 1.5rem;
   margin-bottom: 1rem;
@@ -269,10 +274,6 @@ div.iconos2 {
 
 .card:hover {
   transform: scale(1.1, 1.1);
-}
-
-.card .boton {
-  align-items: center;
 }
 
 #galeria {

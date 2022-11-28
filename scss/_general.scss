@@ -51,8 +51,15 @@ ul{
 }
 
 .boton{
+    @extend .centrar;
     padding: 0.1rem;
     border: $bordes;
     border-radius: 0.5rem;
     padding: 0.3rem;
+}
+
+/*EXTENDS*/
+
+.centrar{
+    align-items: center;
 }

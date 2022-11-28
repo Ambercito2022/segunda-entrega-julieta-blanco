@@ -7,3 +7,11 @@ $bordes: solid 1px rgb(83, 83, 83);
 $pantalla-mediana: 767px;
 $pantalla-chica: 300px;
 $pantalla-grande: 992px;
+
+/*MIXINS*/
+
+@mixin flex-evenly-center{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
