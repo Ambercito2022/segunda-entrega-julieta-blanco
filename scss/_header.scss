@@ -1,6 +1,7 @@
 nav{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: large;
 }
 
 
@@ -10,10 +11,11 @@ nav{
 
 .imagen-header{
     width: 10rem;
+    margin-right: 30rem;
     /*height seria para la altura; width para el ancho*/
 }
 
-#header-flex{
+.header-flex{
  @include flex-evenly-center;
     margin-top: 1rem;
     margin-bottom: 1rem;

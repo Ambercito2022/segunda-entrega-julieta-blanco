@@ -66,6 +66,7 @@ ul {
 nav {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-size: large;
 }
 
 .header-flex__lista-navegacion li:hover {
@@ -74,10 +75,11 @@ nav {
 
 .imagen-header {
   width: 10rem;
+  margin-right: 30rem;
   /*height seria para la altura; width para el ancho*/
 }
 
-#header-flex {
+.header-flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
