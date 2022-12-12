@@ -10,8 +10,9 @@ nav{
 }
 
 .imagen-header{
-    width: 10rem;
+    width: 15rem;
     margin-right: 30rem;
+    max-width: 100%;
     /*height seria para la altura; width para el ancho*/
 }
 
@@ -49,7 +50,8 @@ nav{
 @media screen and (max-width: 767px) {
 
     #header-flex {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
     
     .header-flex__lista-navegacion{

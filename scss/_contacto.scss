@@ -5,7 +5,7 @@ form{
     margin-top: 1.5rem;
 }
 
-#formulario-contacto{
+.formulario-contacto{
     fieldset{
         background-color:  rgba(194, 205, 241, 0.15);
         display: inline;
@@ -13,11 +13,30 @@ form{
         border:solid 0.12rem rgba(0, 0, 0, 0.4);
         border-radius: 1.5rem;
         width: 30rem;
+        max-width: 100%;
         } 
     legend{
         font-weight: bold;
         font-size: 1.2rem;
         }
+}
+
+@media screen and (max-width: 216px){
+    .mb-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .hombre{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    
+    .mujer{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem; 
+    }
+    }
 }
 
 .formulario-contacto__question{

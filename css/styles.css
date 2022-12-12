@@ -74,8 +74,9 @@ nav {
 }
 
 .imagen-header {
-  width: 10rem;
+  width: 15rem;
   margin-right: 30rem;
+  max-width: 100%;
   /*height seria para la altura; width para el ancho*/
 }
 
@@ -113,7 +114,8 @@ nav {
 }
 @media screen and (max-width: 767px) {
   #header-flex {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
   .header-flex__lista-navegacion {
     gap: 1rem;
@@ -372,19 +374,36 @@ form {
   margin-top: 1.5rem;
 }
 
-#formulario-contacto fieldset {
+.formulario-contacto fieldset {
   background-color: rgba(194, 205, 241, 0.15);
   display: inline;
   padding: 1.5rem 3rem;
   border: solid 0.12rem rgba(0, 0, 0, 0.4);
   border-radius: 1.5rem;
   width: 30rem;
+  max-width: 100%;
 }
-#formulario-contacto legend {
+.formulario-contacto legend {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 216px) {
+  .mb-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .hombre {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .hombre .mujer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
 .formulario-contacto__question {
   font-weight: bold;
   margin-bottom: 1rem;

@@ -55,7 +55,7 @@
       <p>Completá el formulario y nos pondremos en contacto a la brevedad</p>
     </div>
 
-    <form id="formulario-contacto" class="col-12">
+    <form class="col-12 formulario-contacto">
         <fieldset>
             <legend>
                 Tus datos personales
@@ -66,11 +66,15 @@
             </div>
             <div class="formulario-contacto__question-2 mb-3">
                   <!--Opción única-->
-                <input type="radio" name="sexo" id="hombre" required>
-                <label for="hombre" class="form-label">Hombre</label>
+                <div class="hombre">
+                  <input type="radio" name="sexo" id="hombre" required>
+                  <label for="hombre" class="form-label">Hombre</label>
+                </div>
 
-                <input type="radio" name="sexo" id="mujer" required>
+                <div class="mujer">
+                  <input type="radio" name="sexo" id="mujer" required>
                 <label for="mujer" class="form-label">Mujer</label>
+                </div>
             </div>
 
             <div class="mb-3">
