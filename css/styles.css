@@ -140,7 +140,7 @@ footer img {
 
 #body-grids {
   display: grid;
-  grid-template-areas: "header header header" "h1 h1 h1" "parrafo parrafo parrafo" "side imagen otherside" "side imagen otherside" "parr parr parr" "footer footer footer";
+  grid-template-areas: "header header header" "h1 h1 h1" "parrafo parrafo parrafo" "side imagen otherside" "side imagen otherside" "side parr otherside" "footer footer footer";
   grid-template-columns: 8fr 84fr 8fr;
   justify-content: space-evenly;
 }
@@ -188,6 +188,12 @@ div.imagen-inicio {
     width: 2.5rem;
   }
 }
+.inicio__parrafo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 div.iconos2 {
   grid-area: otherside;
   display: flex;
@@ -197,14 +203,20 @@ div.iconos2 {
   margin-left: 1.5rem;
 }
 
-#parr {
+.parr {
   margin-top: 1rem;
   grid-area: parr;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   gap: 1rem;
-  font-size: 20rem;
+  font-size: 2rem;
   font-weight: bolder;
+}
+
+.inicio__parrafo {
+  display: flex;
+  flex-direction: row;
 }
 
 /*MEDIA QUERIES PARA DESKTOP FIRST*/

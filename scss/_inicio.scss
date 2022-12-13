@@ -8,7 +8,7 @@
     "parrafo parrafo parrafo"
     "side imagen otherside"
     "side imagen otherside"
-    "parr parr parr"
+    "side parr otherside"
     "footer footer footer";
 
     grid-template-columns: 8fr 84fr 8fr;
@@ -32,8 +32,8 @@ div.iconos1{
     display: flex;
     flex-direction: column;
     align-items: center;
-     justify-content: space-evenly;
-     margin-right: 1.5rem;
+    justify-content: space-evenly;
+    margin-right: 1.5rem;
 
 }
 
@@ -64,6 +64,12 @@ div.imagen-inicio{
     }
 }
 
+.inicio__parrafo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 div.iconos2{
     grid-area: otherside;
@@ -75,15 +81,20 @@ div.iconos2{
 
 }
 
-#parr{
+.parr{
     margin-top: 1rem;
     grid-area: parr;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     gap: 1rem;
-    font-size: 20rem;
+    font-size: 2rem;
     font-weight: bolder;
+}
 
+.inicio__parrafo{
+    display: flex;
+    flex-direction: row;
 }
 
 
