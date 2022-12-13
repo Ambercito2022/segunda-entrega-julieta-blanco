@@ -203,6 +203,8 @@ div.iconos2 {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+  font-size: 20rem;
+  font-weight: bolder;
 }
 
 /*MEDIA QUERIES PARA DESKTOP FIRST*/
