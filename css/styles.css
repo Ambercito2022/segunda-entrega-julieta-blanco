@@ -74,16 +74,13 @@ nav {
 }
 
 .imagen-header {
-  width: 15rem;
+  width: 12rem;
   margin-right: 30rem;
   max-width: 100%;
   /*height seria para la altura; width para el ancho*/
 }
 
 .header-flex {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   top: 0;
@@ -91,9 +88,6 @@ nav {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   /*gap = espacios pequeños*/
   gap: 3rem;
 }
@@ -109,16 +103,10 @@ nav {
 
 @media screen and (max-width: 850px) {
   .imagen-header {
-    width: 8.5rem;
+    width: 70%;
   }
 }
 @media screen and (max-width: 767px) {
-  .header-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-  }
   .header-flex__lista-navegacion {
     gap: 1rem;
   }
@@ -137,6 +125,10 @@ nav {
     flex-direction: column;
   }
 }
+.navbar-brand {
+  width: 50%;
+}
+
 footer {
   margin-top: 1.5rem;
   font-weight: bold;
