@@ -55,8 +55,12 @@ div.imagen-inicio{
 }
 
 @media screen and (max-width: 543px){
-    div.imagen-inicio{
-        max-width: 70%;
+    div.iconos1{
+        display:none;
+    }
+
+    div.iconos2{
+        display:none;
     }
 
     div.inicio__img{
