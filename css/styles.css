@@ -239,6 +239,9 @@ div.iconos2 {
   .inicio__parrafo-fuenteGrande {
     font-size: medium;
   }
+  .carousel {
+    max-width: 75%;
+  }
 }
 @media screen and (max-width: 543px) {
   html {
