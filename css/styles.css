@@ -373,6 +373,11 @@ footer {
 #p2 {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2.3rem;
+}
+
+#p3 {
+  margin-top: 2.3rem;
 }
 
 form {
