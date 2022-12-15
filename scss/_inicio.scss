@@ -66,6 +66,27 @@ div.imagen-inicio{
     div.inicio__img{
         width: 2.5rem;
     }
+
+    .iconos2 {
+        display: none;
+    }
+
+    #body-grids{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel{
+        width: 100% !important;
+    }
+
+    .inicio__img{
+        display: none;
+    }
+
+    .inicio__img-tamano{
+        display: none;
+    }
 }
 
 .inicio__parrafo{
@@ -125,7 +146,7 @@ div.iconos2{
     font-size: medium;
 }
 .carousel{
-    max-width: 75%;
+    max-width: 100%;
 }
 }
 
