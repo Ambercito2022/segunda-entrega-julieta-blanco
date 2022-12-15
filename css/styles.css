@@ -375,6 +375,9 @@ div.iconos2 {
     display: flex;
     flex-direction: column;
   }
+  .mapa {
+    max-width: 100%;
+  }
 }
 header {
   grid-area: header;
